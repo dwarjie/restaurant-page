@@ -1,5 +1,4 @@
-$color: red;
-
-body {
-	background-color: $color;
-}
+@use './partial/global';
+@use './partial/variables';
+@use './partial/small';
+@use './partial/large';

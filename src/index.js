@@ -15,7 +15,6 @@ const about = document.querySelector('#about');
 home.addEventListener('click', () => { changeTab('home') });
 menu.addEventListener('click', () => { changeTab('menu') });
 about.addEventListener('click', () => { changeTab('about') });
-// font-family: 'Playfair Display', serif;
 
 function changeTab(tabTitle) {
 	clearContent(); // clear the content first
