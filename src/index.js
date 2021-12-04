@@ -2,6 +2,7 @@ import clearContent from './modules/clear_content.js';
 import homeTab from './modules/home.js';
 import menuTab from './modules/menu.js';
 import aboutTab from './modules/about.js';
+import './style.scss';
 
 // get the DOM element for the div who will hold the contents
 const webContent = document.querySelector('#content');
