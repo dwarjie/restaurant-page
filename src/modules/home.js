@@ -1,7 +1,6 @@
 import { homeContent } from './contents.js';
 
-const webContent = document.querySelector('#content');
-export default function homeTab() {
+export default function homeTab(webContent) {
 	const head = document.createElement('h1');
 	head.classList.add('font-headline', 'font-bold');
 	const tagline = document.createElement('h2');
