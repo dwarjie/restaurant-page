@@ -1,4 +1,4 @@
-@use './partial/global';
-@use './partial/variables';
-@use './partial/small';
-@use './partial/large';
+@import './partial/variables';
+@import './partial/global';
+@import './partial/small';
+@import './partial/large';

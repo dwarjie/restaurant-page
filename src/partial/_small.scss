@@ -1,0 +1,24 @@
+// This sass partial is specifically for mobile design
+body {
+	position: relative;
+	background-image: url('./img/kohi-bg.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.wrapper { 
+	
+	nav {
+		display: none;
+	}
+}
+
+.cover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: $cover-color;
+}

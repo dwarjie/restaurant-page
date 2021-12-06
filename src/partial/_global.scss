@@ -7,12 +7,50 @@
 }
 
 body {
+	width: 100vw;
+	height: 100vh;
 	text-align: center;
+	color: $text-color;
 	font-family: 'Playfair Display', serif;
+	font-weight: 400;
 	font-size: calc(32/16)rem;
 }
 
+.content-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 90%;
+}
+
 .wrapper {
-	width: 90%;
+	width: 100%;
+	height: 100%;
 	margin: 0 auto;
+}
+
+.font-bold {
+	font-weight: 900;
+}
+
+.font-headline {
+	font-size: 3.25rem;
+}
+
+.font-text {
+	font-size: 1.125rem;
+	font-weight: 400;
+}
+
+.font-footer {
+	margin: 8% 0 0 0;
+	font-size: 1rem;
+	font-weight: 400;
+	color: $footer-color;
+}
+
+li {
+	text-decoration: none;
+	list-style-type: none;
 }

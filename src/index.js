@@ -11,6 +11,11 @@ const home = document.querySelector('#home');
 const menu = document.querySelector('#menu')
 const about = document.querySelector('#about');
 
+// load the home tab once the page loaded
+window.onload = () => {
+	changeTab('home');
+};
+
 // adding event listeners to the navigations
 home.addEventListener('click', () => { changeTab('home') });
 menu.addEventListener('click', () => { changeTab('menu') });
