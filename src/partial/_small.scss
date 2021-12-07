@@ -7,6 +7,50 @@ body {
 	background-repeat: no-repeat;
 }
 
+.nav-overlay {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	background-color: $overlay-color;
+	transition: 0.5s;
+
+	.nav-overlay-close {
+		cursor: pointer;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		padding-right: 1.2rem;
+		font-size: 3.5rem;
+	}
+
+	.nav-overlay-close:hover {
+		color: $hover-color;
+	}
+
+	.nav-overlay-content {
+		position: relative;
+		font-weight: 600;
+		margin-top: 6.5rem;
+		margin-left: 4rem;
+		text-align: left;
+
+		li {
+			cursor: pointer;
+			margin-bottom: .9rem;
+			color: $text-color;
+			transition: color .3s;
+		}
+
+		li:hover {
+			color: $hover-color;
+		}
+	}
+}
+
 .wrapper { 
 	
 	nav {
@@ -21,4 +65,13 @@ body {
 	width: 100vw;
 	height: 100vh;
 	background-color: $cover-color;
+}
+
+.nav-burger {
+	cursor: pointer;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	padding-top: 1rem;
+	padding-right: .1rem;
 }

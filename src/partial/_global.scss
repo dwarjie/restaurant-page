@@ -21,11 +21,11 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 90%;
+	height: 85%;
 }
 
 .wrapper {
-	width: 100%;
+	width: 90%;
 	height: 100%;
 	margin: 0 auto;
 }
@@ -44,10 +44,17 @@ body {
 }
 
 .font-footer {
-	margin: 8% 0 0 0;
-	font-size: 1rem;
+	font-size: .8rem;
 	font-weight: 400;
 	color: $footer-color;
+}
+
+.nav-overlay-text {
+	font-size: 3.8rem;
+}
+
+.nav-burger {
+	font-size: 2rem;
 }
 
 li {

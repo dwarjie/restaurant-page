@@ -1,6 +1,17 @@
 // This sass partial is for large sizes like desktops
-@media screen
-    and (min-device-width: 1200px)
-    and (max-device-width: 1600px) {
+@media only screen
+    and (min-width: 768px)
+    and (max-width: 1600px) {
     	
+    .font-headline {
+        font-size: 7.9rem;
+    }
+
+    .font-text {
+        font-size: 2rem;
+    }
+
+    .font-footer {
+        font-size: 1rem;
+    }
 }
