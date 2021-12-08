@@ -16,7 +16,7 @@ const about = document.querySelector('#about');
 
 // load the home tab once the page loaded
 window.onload = () => {
-	changeTab('home');
+	changeTab('about');
 };
 
 // adding event listeners to the navigations

@@ -3,9 +3,9 @@ import { menuContent } from './contents.js';
 
 export default function menuTab(webContent) {
 	const head = document.createElement('h1');
-	head.classList.add('font-headline');
+	head.classList.add('font-headline', 'menu-headline');
 	head.innerHTML = menuContent.headLine;
-
+	
 	const menuHolder = document.createElement('div');
 	menuHolder.classList.add('menu');
 	// create the first container for the menu
