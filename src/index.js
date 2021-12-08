@@ -10,19 +10,25 @@ const webContent = document.querySelector('#content');
 const navOverlay = document.querySelector('.nav-overlay');
 const navBurger = document.querySelector('.nav-burger');
 const closeNavBurger = document.querySelector('.nav-overlay-close');
-const home = document.querySelector('#home');
-const menu = document.querySelector('#menu')
-const about = document.querySelector('#about');
+const home = document.querySelectorAll('#home');
+const menu = document.querySelectorAll('#menu')
+const about = document.querySelectorAll('#about');
 
 // load the home tab once the page loaded
 window.onload = () => {
-	changeTab('about');
+	changeTab('home');
 };
 
 // adding event listeners to the navigations
-home.addEventListener('click', () => { changeTab('home') });
-menu.addEventListener('click', () => { changeTab('menu') });
-about.addEventListener('click', () => { changeTab('about') });
+home.forEach(tab => {
+	tab.addEventListener('click', () => { changeTab('home') });
+});
+menu.forEach(tab => {
+	tab.addEventListener('click', () => { changeTab('menu') });
+});
+about.forEach(tab => {
+	tab.addEventListener('click', () => { changeTab('about') })
+});
 // for opening and closing the navigation for mobile
 navBurger.addEventListener('click', () => {
 	navOverlay.style.width = '100%';

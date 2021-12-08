@@ -4,14 +4,52 @@
     and (max-width: 1600px) {
     	
     .font-headline {
-        font-size: 7.9rem;
+        font-size: 7rem;
     }
 
     .font-text {
-        font-size: 2rem;
+        font-size: 1.8rem; 
     }
 
     .font-footer {
         font-size: 1rem;
+    }
+
+    .nav-burger {
+        display: none;
+    }
+
+    .wrapper nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 1.2rem;
+
+        li {
+            cursor: pointer;
+            display: inline-block;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        li:nth-child(1),
+        li:nth-child(2) {
+            margin-right: 4rem;
+        }
+
+        li:hover {
+            color: $hover-color;
+        }
+    }
+
+    .menu {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2.1rem;
+    }
+
+    .about-desc {
+        text-align: center;
     }
 }
